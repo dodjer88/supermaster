@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url, patterns
 from django.contrib import admin
+from sheduler import views
 
 urlpatterns = [
-    url(r'^$', 'sheduler.views.home_page', name='home')
+    url(r'^$', views.home_page(), name='home')
     #url(r'^admin/', include(admin.site.urls)),
 ]

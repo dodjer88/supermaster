@@ -16,7 +16,7 @@ class NewVisitorTest(unittest.TestCase):
         self.browser.get('http://localhost:8000')
 
         # Name and header site
-        self.assertIn('nogotki',self.browser.title)
+        self.assertIn('nogotki', self.browser.title)
 
         # We need our magic button Fast Enroll
         enroll_button = self.browser.find_element_by_id('fast_enroll')
